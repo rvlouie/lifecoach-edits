@@ -1,0 +1,231 @@
+<html>
+  <head>
+      <title>Life Coach</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="rocket_ship-32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="rocket_ship-16.png">
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" type="text/css" href="student-side.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper flex flex-column flex-align-center">
+      <div class="header flex flex-align-center flex-justify-center">
+        <img class="header__image" src="lifecoachlogo.svg" />
+      </div>
+
+      <div class="mockup-toggle flex flex-align-center">
+        <span class="bodySmall">Creator</span>
+        <a href="student.html">
+          <div class="toggle-wrapper flex flex-align-center">
+            <div class="toggle-button"></div>
+            <div class="toggle-button toggle-button-transparent"></div>
+          </div>
+        </a>
+        <span class="bodySmall">Student</span>
+      </div>
+
+  
+      <div class="content">
+        <div class="content__user-image"></div>
+
+        <!-- Header -->
+
+        <div class="content__date-header">
+          <h3 class="heading4 content__subheader">Rick Louie</h3>
+        </div>
+
+        <!-- Timeline -->
+
+        <div class="content__timeline">
+          <button class="heading5 content__timeline__nav-item content__timeline__nav-item--upcoming">Milestones</button>
+
+          <!-- Upcoming timeline -->
+
+          <div class="content__timeline__wrapper content__timeline__wrapper--open flex flex-column flex-justify-space-between content__timeline__wrapper--upcoming">
+            <div class="content__timeline__node flex flex-column flex-justify-center">
+              <div class="flex flex-align-center mb-xs">
+                <div class="emoji__small">📚</div>
+                <div class="content__timeline__node__copy">
+                  <p class="bodySmallSemiBold">Meditation reading</p>
+                  <p class="bodySmall content__timeline__node__copy__description">Due March 28, 2020</p>
+                </div>
+              </div>
+              <div class="flex flex-align-center">
+                <div class="emoji__small">📋</div>
+                <div class="content__timeline__node__copy">
+                  <p class="bodySmallSemiBold">Reflection writing</p>
+                  <p class="bodySmall content__timeline__node__copy__description">Due March 28, 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="content__timeline__node flex flex-align-center">
+              <div class="emoji__small">📺</div>
+              <div class="content__timeline__node__copy">
+                <p class="bodySmallSemiBold">Zoom call with your coach</p>
+                <p class="bodySmall content__timeline__node__copy__description">March 24, 2020 @ 12:30pm</p>
+              </div>
+            </div>
+            <div class="content__timeline__node content__timeline__node--completed flex flex-align-center content__timeline__node--more-padding">
+              <svg class="completed-check" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.23347 18.7447L3.26876 13.079C2.91041 12.7386 2.91041 12.1867 3.26876 11.8462L4.56648 10.6135C4.92483 10.2731 5.50589 10.2731 5.86424 10.6135L9.88235 14.4302L18.4887 6.25529C18.8471 5.9149 19.4281 5.9149 19.7865 6.25529L21.0842 7.48799C21.4425 7.82838 21.4425 8.38028 21.0842 8.7207L10.5312 18.7447C10.1728 19.0851 9.59182 19.0851 9.23347 18.7447V18.7447Z" />
+              </svg>
+              <div class="content__timeline__node__copy">
+                <p class="bodySmallSemiBold">Reflection writing</p>
+                <p class="bodySmall content__timeline__node__copy__description">Completed March 16, 2020</p>
+              </div>
+            </div>
+            <div class="content__timeline__node content__timeline__node--completed flex flex-align-center content__timeline__node--more-padding">
+              <svg class="completed-check" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.23347 18.7447L3.26876 13.079C2.91041 12.7386 2.91041 12.1867 3.26876 11.8462L4.56648 10.6135C4.92483 10.2731 5.50589 10.2731 5.86424 10.6135L9.88235 14.4302L18.4887 6.25529C18.8471 5.9149 19.4281 5.9149 19.7865 6.25529L21.0842 7.48799C21.4425 7.82838 21.4425 8.38028 21.0842 8.7207L10.5312 18.7447C10.1728 19.0851 9.59182 19.0851 9.23347 18.7447V18.7447Z" />
+              </svg>
+              <div class="content__timeline__node__copy">
+                <p class="bodySmallSemiBold">Meditation writing</p>
+                <p class="bodySmall content__timeline__node__copy__description">Completed March 11, 2020</p>
+              </div>
+            </div>
+            <div class="content__timeline__node content__timeline__node--completed flex flex-align-center">
+              <svg class="completed-check" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.23347 18.7447L3.26876 13.079C2.91041 12.7386 2.91041 12.1867 3.26876 11.8462L4.56648 10.6135C4.92483 10.2731 5.50589 10.2731 5.86424 10.6135L9.88235 14.4302L18.4887 6.25529C18.8471 5.9149 19.4281 5.9149 19.7865 6.25529L21.0842 7.48799C21.4425 7.82838 21.4425 8.38028 21.0842 8.7207L10.5312 18.7447C10.1728 19.0851 9.59182 19.0851 9.23347 18.7447V18.7447Z" />
+              </svg>
+              <div class="content__timeline__node__copy">
+                <p class="bodySmallSemiBold">Zoom call with your coach</p>
+                <p class="bodySmall content__timeline__node__copy__description">Completed March 8, 2020 @ 12:30pm</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Content -->
+
+        <div class="content__content-area">
+
+          <!-- Schedule UI -->
+
+          <div class="content__add content__add__schedule-ui">
+            <div class="flex flex-justify-space-between">
+              <h6 class="heading6 mb-s content__add__header">Schedule a call</h6>
+              <svg class="content__add__close content__add__close__schedule-ui" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0823 12L18.7951 7.28732C19.0677 7.01477 19.0677 6.57246 18.7951 6.29946L17.7001 5.20442C17.4275 4.93186 16.9852 4.93186 16.7122 5.20442L11.9998 9.91753L7.28696 5.20486C7.01439 4.9323 6.57207 4.9323 6.29907 5.20486L5.20443 6.29946C4.93186 6.57202 4.93186 7.01433 5.20443 7.28732L9.91725 12L5.20443 16.7127C4.93186 16.9852 4.93186 17.4275 5.20443 17.7005L6.2995 18.7956C6.57207 19.0681 7.01439 19.0681 7.28739 18.7956L11.9998 14.0825L16.7126 18.7951C16.9852 19.0677 17.4275 19.0677 17.7005 18.7951L18.7956 17.7001C19.0681 17.4275 19.0681 16.9852 18.7956 16.7122L14.0823 12Z" />
+              </svg> 
+            </div>
+
+            <div class="content__add__calendly-ui mb-l">
+              <!-- Calendly inline widget begin -->
+              <div class="calendly-inline-widget" data-url="https://calendly.com/rick-louie/zoom-call" style="min-width:320px;height:630px;"></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+              <!-- Calendly inline widget end -->
+            </div>
+
+          </div>
+
+          <!-- Upload UI -->
+
+          <div class="content__add content__add__upload-ui">
+            <div class="flex flex-justify-space-between">
+              <h6 class="heading6 mb-s content__add__header">Upload a document</h6>
+              <svg class="content__add__close content__add__close__upload-ui" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0823 12L18.7951 7.28732C19.0677 7.01477 19.0677 6.57246 18.7951 6.29946L17.7001 5.20442C17.4275 4.93186 16.9852 4.93186 16.7122 5.20442L11.9998 9.91753L7.28696 5.20486C7.01439 4.9323 6.57207 4.9323 6.29907 5.20486L5.20443 6.29946C4.93186 6.57202 4.93186 7.01433 5.20443 7.28732L9.91725 12L5.20443 16.7127C4.93186 16.9852 4.93186 17.4275 5.20443 17.7005L6.2995 18.7956C6.57207 19.0681 7.01439 19.0681 7.28739 18.7956L11.9998 14.0825L16.7126 18.7951C16.9852 19.0677 17.4275 19.0677 17.7005 18.7951L18.7956 17.7001C19.0681 17.4275 19.0681 16.9852 18.7956 16.7122L14.0823 12Z" />
+              </svg> 
+            </div>
+            <form>
+              <div class="privacy-input__item flex flex-align-center mb-s">
+                <input type="radio" id="shared" name="privacy" value="shared">
+                <label class="ml-s" for="shared">
+                  <h5 class="bodyMainBold">Shared</h5>
+                  <p class="bodySmall privacy-input__item__description">Shared posts will be visible to your coach, they will be notified when you submit.</p>
+                </label>
+              </div>
+              <div class="privacy-input__item flex flex-align-center">
+                <input type="radio" id="private" name="privacy" value="private">
+                <label class="ml-s" for="private">
+                  <h5 class="bodyMainBold">Private</h5>
+                  <p class="bodySmall privacy-input__item__description">Private posts are just for you, they won't be visible to your coach.</p>
+                </label>
+              </div>
+            </form>
+            <div class="content__uplaod-ui flex flex-align-center flex-justify-center">
+              <svg class="content__uplaod-ui__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04ZM14 13V17H10V13H7L12 8L17 13H14Z" fill="currentColor"/>
+              </svg> 
+              <div class="content__uplaod-ui__copy">
+                <h5 class="bodyLeadBold">Drag and drop or click here to upload documents.</h5>
+                <p class="bodySmall content__uplaod-ui__copy__description">You can upload any document up to 2GB large in any format.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Write something UI -->
+
+          <div class="content__add content__add__writing">
+            <div class="flex flex-justify-space-between">
+              <h6 class="heading6 mb-s content__add__header">Write something</h6>
+              <svg class="content__add__close content__add__close__writing" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0823 12L18.7951 7.28732C19.0677 7.01477 19.0677 6.57246 18.7951 6.29946L17.7001 5.20442C17.4275 4.93186 16.9852 4.93186 16.7122 5.20442L11.9998 9.91753L7.28696 5.20486C7.01439 4.9323 6.57207 4.9323 6.29907 5.20486L5.20443 6.29946C4.93186 6.57202 4.93186 7.01433 5.20443 7.28732L9.91725 12L5.20443 16.7127C4.93186 16.9852 4.93186 17.4275 5.20443 17.7005L6.2995 18.7956C6.57207 19.0681 7.01439 19.0681 7.28739 18.7956L11.9998 14.0825L16.7126 18.7951C16.9852 19.0677 17.4275 19.0677 17.7005 18.7951L18.7956 17.7001C19.0681 17.4275 19.0681 16.9852 18.7956 16.7122L14.0823 12Z" />
+              </svg> 
+            </div>
+            <form>
+              <div class="privacy-input__item flex flex-align-center mb-s">
+                <input type="radio" id="writing-shared" name="privacy" value="shared">
+                <label class="ml-s" for="writing-shared">
+                  <h5 class="bodyMainBold">Shared</h5>
+                  <p class="bodySmall privacy-input__item__description">Shared posts will be visible to your coach, they will be notified when you submit.</p>
+                </label>
+              </div>
+              <div class="privacy-input__item flex flex-align-center">
+                <input type="radio" id="writing-private" name="privacy" value="private">
+                <label class="ml-s" for="writing-private">
+                  <h5 class="bodyMainBold">Private</h5>
+                  <p class="bodySmall privacy-input__item__description">Private posts are just for you, they won't be visible to your coach.</p>
+                </label>
+              </div>
+            </form>
+            <div class="content__add__textarea-ui--header flex">
+              <div class="content__add__textarea-ui--header__item"><span class="bodyLeadBold">B</span></div>
+              <div class="content__add__textarea-ui--header__item"><span class="bodyLeadBold emphasis"><em>I</em></span></div>
+              <div class="content__add__textarea-ui--header__item"><span class="bodyLeadBold underline">U</span></div>
+            </div>
+            <textarea class="bodyMain content__add__textarea-ui"></textarea>
+            <button class="bodyMainBold writing__submit__button">Submit</button>
+          </div>
+
+          <div class="content__upcoming mb-l">
+            <div class="flex flex-align-center flex-justify-space-between">
+              <h5 class="heading5 content__upcoming__milestone-copy">Create a milestone</h5>
+            </div>
+            <ul class="content__upcoming__list">
+              <li class="content__upcoming__list-link content__upcoming__list-link--milestone flex flex-align-center">
+                <button class="icon-button icon-button--upload bodyLead flex flex-align-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04ZM14 13V17H10V13H7L12 8L17 13H14Z" fill="currentColor"/>
+                  </svg>                  
+                  Upload a file
+                </button>
+              </li>
+              <li class="content__upcoming__list-link content__upcoming__list-link--milestone">
+                <button class="icon-button icon-button--write bodyLead flex flex-align-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3688 3.29L20.7088 5.63C21.0988 6.02 21.0988 6.65 20.7088 7.04L18.8788 8.87L15.1288 5.12L16.9588 3.29C17.1488 3.1 17.3988 3 17.6588 3C17.9188 3 18.1688 3.09 18.3688 3.29ZM2.99878 17.25V21H6.74878L17.8088 9.94L14.0588 6.19L2.99878 17.25ZM5.91878 19H4.99878V18.08L14.0588 9.02L14.9788 9.94L5.91878 19Z" fill="currentColor"/>
+                  </svg>
+                  Write something
+                </button>
+              </li>
+              <li class="content__upcoming__list-link content__upcoming__list-link--milestone">
+                <button class="icon-button icon-button--schedule bodyLead flex flex-align-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 4.5H16.75V2.46875C16.75 2.21094 16.5391 2 16.2812 2H14.7187C14.4609 2 14.25 2.21094 14.25 2.46875V4.5H9.25V2.46875C9.25 2.21094 9.03906 2 8.78125 2H7.21875C6.96094 2 6.75 2.21094 6.75 2.46875V4.5H4.875C3.83984 4.5 3 5.33984 3 6.375V20.125C3 21.1602 3.83984 22 4.875 22H18.625C19.6602 22 20.5 21.1602 20.5 20.125V6.375C20.5 5.33984 19.6602 4.5 18.625 4.5ZM18.3906 20.125H5.10937C4.98047 20.125 4.875 20.0195 4.875 19.8906V8.25H18.625V19.8906C18.625 20.0195 18.5195 20.125 18.3906 20.125Z" fill="currentColor" />
+                  </svg>
+                  Schedule a call
+                </button>
+              </li>
+            </ul>
+          </div>
+    
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
