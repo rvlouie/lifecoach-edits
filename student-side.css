@@ -711,6 +711,7 @@ input[type="date"] {
 .content__content-area {
   grid-area: content-area;
   align-self: start;
+  padding-top: var(--sp-xs);
 }
 
 .content__actions {
@@ -1114,6 +1115,39 @@ input[type="date"] {
 
 .milestone__create__input--date {
   width: 40%;
+}
+
+.milestone__comment-ui {
+  display: flex;
+  align-items: center;
+  padding: var(--sp-xxs) 0;
+  width: fit-content;
+  margin-top: var(--sp-m);
+}
+
+.milestone__comment-ui__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--plumette); 
+  transition: var(--transition-timing);
+}
+
+.milestone__comment-ui__button.inactive {
+  color: var(--concrete);
+}
+
+.milestone__comment-ui__button.inactive:hover {
+  color: var(--plumette);
+}
+
+.milestone__comment-ui__button--write {
+  margin-right: var(--sp-m);
+}
+
+.milestone__comment-ui__button svg {
+  width: 16px;
+  margin-right: var(--sp-xs);
 }
 
 /* Mobile styles */

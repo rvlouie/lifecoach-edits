@@ -35,7 +35,7 @@
             <img src="Ashley-Baldwin.jpg" class="comment__image" />
             <div class="flex flex-column ml-s">
               <h6 class="heading6 panel__section__header">Coach</h6>
-              <h5 class="bodySmallSemiBold">Ashley Baldwin (that's you.)</h5>
+              <h5 class="bodySmallSemiBold">Ashley Baldwin</h5>
             </div>
           </div>
           <h3 class="heading4 content__subheader">Hey Rick Louie, let's make some progress today.</h3>
@@ -212,18 +212,41 @@
           </div>
 
           <section class="assignment mb-l">
-            <h6 class="heading6 mb-s content__add__header">Assignment</h6>
+            <h6 class="heading6 mb-s content__add__header">Milestone</h6>
             <div class="assignment__header mb-m">
               <h4 class="heading5">📚 Meditation reading</h4>
               <p class="bodyMain assignment__description">Take an hour to read through the exercise and practice the guided meditation. Be thorough and mindful throughout, concentrating on your breathing and body state. Always remember to breathe. 💆‍♀️</p>
             </div>
-            <div class="assignment__pdf-embed">
+            <div class="assignment__pdf-embed mb-s">
               <embed src="body-scan.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+            <div class="milestone__comment-ui mb-xs">
+              <button class="bodySmallSemiBold milestone__comment-ui__button milestone__comment-ui__button--write">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3688 3.29L20.7088 5.63C21.0988 6.02 21.0988 6.65 20.7088 7.04L18.8788 8.87L15.1288 5.12L16.9588 3.29C17.1488 3.1 17.3988 3 17.6588 3C17.9188 3 18.1688 3.09 18.3688 3.29ZM2.99878 17.25V21H6.74878L17.8088 9.94L14.0588 6.19L2.99878 17.25ZM5.91878 19H4.99878V18.08L14.0588 9.02L14.9788 9.94L5.91878 19Z" fill="currentColor"/>
+                </svg>
+                Write something
+              </button>
+              <button class="bodySmallSemiBold milestone__comment-ui__button inactive milestone__comment-ui__button--file">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04ZM14 13V17H10V13H7L12 8L17 13H14Z" fill="currentColor"/>
+                </svg>   
+                Add a file
+              </button>
+            </div>
+            <div class="assignment__writing__ui">
+              <div class="content__add__textarea-ui--header flex">
+                <div class="content__add__textarea-ui--header__item"><span class="bodyLeadBold">B</span></div>
+                <div class="content__add__textarea-ui--header__item"><span class="bodyLeadBold emphasis"><em>I</em></span></div>
+                <div class="content__add__textarea-ui--header__item"><span class="bodyLeadBold underline">U</span></div>
+              </div>
+              <textarea class="bodyMain content__add__textarea-ui"></textarea>
+              <button class="bodyMainBold writing__submit__button">Submit</button>
             </div>
           </section>
 
           <section class="assignment mb-l">
-            <h6 class="heading6 mb-s content__add__header">Assignment</h6>
+            <h6 class="heading6 mb-s content__add__header">Milestone</h6>
             <div class="assignment__header mb-m">
               <h4 class="heading5">📋 Reflection writing</h4>
               <p class="bodyMain assignment__description">After finishing the medtation exercise above, reflect on your state of mind and how you felt afterward. Better? Worse?</p>
