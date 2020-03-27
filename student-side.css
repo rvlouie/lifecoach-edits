@@ -195,6 +195,11 @@ input[type="date"] {
   margin-left: var(--sp-s);
 }
 
+.mr-s {
+  margin-right: var(--sp-s);
+}
+
+
 .ml-xs {
   margin-left: var(--sp-xs);
 }
@@ -233,6 +238,14 @@ input[type="date"] {
 
 .justify-self-end{
   justify-self: end;
+}
+
+.justify-flex-end{
+  justify-content: flex-end;
+}
+
+.justify-flex-start{
+  justify-content: flex-start;
 }
 
 .justify-self-center {
@@ -1073,6 +1086,25 @@ input[type="date"] {
 .comment-student .comment__container {
   background-color: var(--royal);
   color: var(--clinical);
+}
+
+.comment__document {
+  background-color: var(--clinical);
+  transition: color var(--transition-timing);
+  padding: var(--sp-s);
+  border-radius: 3px;
+}
+
+.comment__document:hover h4, .comment__document:hover p {
+  color: var(--slate);
+}
+
+.comment__document__sub-copy {
+  color: var(--slate);
+}
+
+.comment__emoji {
+  font-size: var(--fs6);
 }
 
 .writing__paragraph {
