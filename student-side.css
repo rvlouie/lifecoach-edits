@@ -99,6 +99,15 @@ input[type="radio"] {
   box-shadow: none;
 }
 
+input[type="text"], input[type="date"], select {
+  border-radius: 5px; 
+}
+
+input[type="date"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  cursor: pointer;
+}
+
 /* Font styles */
 
 .heading1 {
@@ -170,6 +179,14 @@ input[type="radio"] {
 
 /* utilities */
 
+.mt-xs {
+  margin-top: var(--sp-xs);
+}
+
+.mt-s {
+  margin-top: var(--sp-s);
+}
+
 .mb-s {
   margin-bottom: var(--sp-s);
 }
@@ -180,6 +197,10 @@ input[type="radio"] {
 
 .ml-xs {
   margin-left: var(--sp-xs);
+}
+
+.mb-xxs {
+  margin-bottom: var(--sp-xxs);
 }
 
 .mb-xs {
@@ -365,7 +386,6 @@ input[type="radio"] {
   padding: var(--sp-s) var(--sp-s) var(--sp-s) calc(var(--sp-s) + var(--sp-s)); 
   border: 1px solid var(--grey-area);
   background-color: var(--clinical);
-  margin-bottom: 0;
 }
 
 .panel__emoji {
@@ -594,14 +614,16 @@ input[type="radio"] {
 }
 
 .mockup-toggle {
-  position: absolute;
-  top: calc(var(--sp-xs) + var(--sp-xxxxl));
+  position: fixed;
+  top: var(--sp-s);
   right: var(--sp-m);
+  color: var(--clinical);
+  z-index: 3000;
 }
 
 .toggle-wrapper {
   border-radius: 40px;
-  border: 2px solid var(--squid-ink);
+  border: 2px solid var(--clinical);
   margin: 0 var(--sp-xxs);
 }
 
@@ -700,16 +722,13 @@ input[type="radio"] {
 }
 
 .icon-button {
-  color: var(--plumette);
+  color: var(--squid-ink);
   background-color: transparent;
   margin-right: var(--sp-l);
   transition: color var(--transition-timing);
   padding: var(--sp-m) var(--sp-m);
   width: 100%;
-}
-
-.icon-button svg {
-  margin-right: var(--sp-xs);
+  text-align: left;
 }
 
 .content__subheader {
@@ -1061,7 +1080,6 @@ input[type="radio"] {
   padding: var(--sp-xs) var(--sp-s);
   border-radius: var(--sp-m);
   color: var(--clinical);
-  margin-bottom: var(--sp-l);
 }
 
 .writing__submit__button:hover {
@@ -1072,6 +1090,30 @@ input[type="radio"] {
   width: 100%;
   height: 290px;
   margin: var(--sp-l) 0;
+}
+
+/* Milestones */
+
+.milestone__create__form {
+  background-color: var(--clinical);
+  border-radius: 20px;
+  padding: var(--sp-l);
+  box-shadow: inset 0px 0px 0px 1px var(--grey-area);
+}
+
+.milestone__create__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.milestone__create__input {
+  padding: var(--sp-xs) var(--sp-s);
+  color: var(--slate);
+  margin-bottom: var(--sp-m);
+}
+
+.milestone__create__input--date {
+  width: 40%;
 }
 
 /* Mobile styles */
