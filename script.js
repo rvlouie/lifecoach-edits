@@ -47,37 +47,19 @@ $(document).ready(function() {
         $(".content__empty").addClass("show")
     });
 
-    // Panel
+    $("#writing-milestone-file").click(function() {
+        $("#writing-write").addClass("hide");
+        $("#writing-upload").removeClass("hide");
+        $("#writing-milestone-file").removeClass("inactive")
+        $("#writing-milestone-comment").addClass("inactive")
+    })
 
-    $(".panel__section__header--goals").click(function() {
-        $(".panel__list--goals").toggleClass("closed")
-    });
-    $(".panel__section__header--milestones").click(function() {
-        $(".panel__list--milestones-wrapper").toggleClass("closed")
-    });
-
-    $(".panel__section__header--goals").click(function() {
-        $(".panel__section__header--goals").toggleClass("mb-s")
-    });
-    $(".panel__section__header--milestones").click(function() {
-        $(".panel__section__header--milestones").toggleClass("mb-s")
-    });
-
-    $(".panel__section__header--goals").click(function() {
-        $(".panel__section__header--goals svg").toggleClass("panel__icon")
-    });
-    $(".panel__section__header--milestones").click(function() {
-        $(".panel__section__header--milestones svg").toggleClass("panel__icon")
-    });
-
-
-    $(".panel__toggle").click(function() {
-        $(".panel").addClass("panel__hide")
-    });
-
-    $(".panel__toggle--open").click(function() {
-        $(".panel").removeClass("panel__hide")
-    });
+    $("#writing-milestone-comment").click(function() {
+        $("#writing-write").removeClass("hide");
+        $("#writing-upload").addClass("hide");
+        $("#writing-milestone-file").addClass("inactive")
+        $("#writing-milestone-comment").removeClass("inactive")
+    })
 
 
 });
