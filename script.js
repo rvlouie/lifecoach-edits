@@ -62,4 +62,8 @@ $(document).ready(function() {
     })
 
 
+    $(".panel__section__header--goals").click(function() {
+        $(".panel__list--goals").toggleClass("closed")
+    })
+
 });
