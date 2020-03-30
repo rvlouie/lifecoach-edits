@@ -661,6 +661,22 @@ input[type="date"] {
   background-color: transparent;
 }
 
+.milestone__toggle {
+  cursor: pointer;
+}
+
+.milestone__toggle .toggle-wrapper {
+  border-color: var(--squid-ink);
+}
+
+.toggle-button--incomplete {
+  background-color: var(--slate);
+}
+
+.toggle-button--incomplete:hover {
+  background-color: var(--concrete);
+}
+
 .content {
   padding-top: calc(58px + var(--sp-xxxxl));
   width: 760px;
