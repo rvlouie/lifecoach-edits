@@ -896,6 +896,14 @@ input[type="date"] {
   cursor: pointer;
 }
 
+.content__timeline__node--add {
+  color: var(--slate);
+}
+
+.content__timeline__node--add:hover {
+  color: var(--squid-ink);
+}
+
 .content__timeline__node--completed {
   display: grid;
   grid-template-columns: 20px 1fr;
