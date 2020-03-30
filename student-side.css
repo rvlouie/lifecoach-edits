@@ -6,6 +6,7 @@
   --caribbean: #52dccb;
   --royal: #204bbf;
   --whale: #0f9fff;
+  --red-herring: #c00;
   --squid-ink: #212338;
   --midnight: #292c44;
   --dark-and-stormy: #343854;
@@ -827,6 +828,10 @@ input[type="date"] {
 
 .content__upcoming__list-link__copy {
   color: var(--slate);
+}
+
+.content__upcoming__list-link__copy--danger {
+  color: var(--red-herring);
 }
 
 /* Timeline */
