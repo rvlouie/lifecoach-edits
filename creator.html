@@ -11,9 +11,9 @@
   </head>
   <body>
     <div class="wrapper flex flex-column flex-align-center">
-      <div class="header flex flex-align-center flex-justify-center">
+      <a href="creator.html" class="header flex flex-align-center flex-justify-center">
         <img class="header__image" src="lifecoachlogo.svg" />
-      </div>
+      </a>
 
       <div class="mockup-toggle flex flex-align-center">
         <span class="bodySmall">Coach</span>
@@ -47,7 +47,10 @@
 
         <div class="content__timeline">
           <div class="panel__goals">
-            <button class="heading5 content__timeline__nav-item panel__section__header--goals mb-s flex flex-align-center">
+            <button class="heading5 content__timeline__nav-item panel__section__header--goals mb-s flex flex-align-center flex-justify-space-between">
+              <svg class="mr-xs" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.59 8.59L12 13.17L7.41 8.59L6 10L12 16L18 10L16.59 8.59Z" fill="currentColor"/>
+              </svg>  
               Rick's Goals
             </button>
             <ol class="panel__list panel__list--goals mb-s">
@@ -56,7 +59,12 @@
               <li class="bodyMain panel__goal__list__item ">Meditate every day</li>
             </ol>
           </div>  
-          <button class="heading5 content__timeline__nav-item content__timeline__nav-item--upcoming">Rick's Milestones</button>
+          <button class="heading5 content__timeline__nav-item content__timeline__nav-item--upcoming flex flex-align-center flex-justify-space-between">
+            <svg class="mr-xs" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.59 8.59L12 13.17L7.41 8.59L6 10L12 16L18 10L16.59 8.59Z" fill="currentColor"/>
+            </svg>  
+            Rick's Milestones
+          </button>
 
           <!-- Upcoming timeline -->
 

@@ -200,6 +200,10 @@ input[type="date"] {
   margin-right: var(--sp-s);
 }
 
+.mr-xs {
+  margin-right: var(--sp-xs);
+}
+
 
 .ml-xs {
   margin-left: var(--sp-xs);
@@ -370,6 +374,16 @@ input[type="date"] {
 
 .panel__section__header svg {
   margin-left: -4px;
+}
+
+.content__timeline__nav-item--upcoming svg, .panel__section__header--goals svg {
+  transform: rotate(0deg);
+  transition: all var(--transition-timing);
+}
+
+.content__timeline__nav-item--upcoming svg.closed, .panel__section__header--goals svg.closed {
+  transform: rotate(-90deg);
+  transition: transform var(--transition-timing);
 }
 
 .panel__section__header:hover {
@@ -684,7 +698,7 @@ input[type="date"] {
   padding-bottom: var(--sp-xl);
   margin: auto;
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 210px 1fr;
   grid-gap: var(--sp-m);
   grid-row-gap: var(--sp-l);
   align-items: center;
@@ -842,6 +856,7 @@ input[type="date"] {
   padding: var(--sp-xs) var(--sp-s);
   border-radius: var(--sp-m);
   margin-bottom: var(--sp-xs);
+  margin-left: -24px;
 }
 
 .content__timeline__nav-item--upcoming {
@@ -1197,6 +1212,7 @@ input[type="date"] {
 .milestone__comment-ui__button {
   display: flex;
   align-items: center;
+  background-color: transparent;
   cursor: pointer;
   color: var(--plumette); 
   transition: var(--transition-timing);

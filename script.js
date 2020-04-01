@@ -6,6 +6,7 @@ $(document).ready(function() {
 
     $(".content__timeline__nav-item--upcoming").click(function() {
         $(".content__timeline__wrapper--upcoming").toggleClass("content__timeline__wrapper--open")
+        $(".content__timeline__nav-item--upcoming svg").toggleClass("closed")
     });
     $(".content__timeline__nav-item--past").click(function() {
         $(".content__timeline__wrapper--past").toggleClass("content__timeline__wrapper--open")
@@ -63,7 +64,8 @@ $(document).ready(function() {
 
 
     $(".panel__section__header--goals").click(function() {
-        $(".panel__list--goals").toggleClass("closed")
+        $(".panel__list--goals").toggleClass("closed");
+        $(".panel__section__header--goals svg").toggleClass("closed")
     })
 
 });
